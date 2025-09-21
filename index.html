@@ -62,14 +62,18 @@
   </style>
 </head>
 <body>
-  <div class="container">
+    <div class="container">
     <h1>Average Finder</h1>
-    <input type="number" id="score1" placeholder="Enter Score 1 (0-100)" min="0" max="100" />
-    <input type="number" id="score2" placeholder="Enter Score 2 (0-100)" min="0" max="100" />
     
-    <button py-click="show_result()">Compute Average</button>
-    <div id="result"></div>
-  </div>
+        <label for="score1" class="label"></label>
+        <input type="number" id="score1" class="form-label" placeholder="Enter score (0-100)">
+        <br>
+        <label for="score2" class="label"></label>
+        <input type="number" id="score2" class="form-label" placeholder="Enter score (0-100)">
+        <br> 
+        <button py-click="find_average">Compute Average</button>
+        <div id="result"></div>
+    </div>
 
   <py-script src="main.py"></py-script>
 </body>
